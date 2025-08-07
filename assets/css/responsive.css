@@ -1,0 +1,427 @@
+/* =====================================
+   AICO Elektronik - Responsive CSS
+   Mobile & Tablet Optimizations
+   ===================================== */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero-content {
+    gap: var(--space-2xl);
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  .pcb-illustration {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-content {
+    gap: var(--space-2xl);
+  }
+
+  .stats-grid {
+    gap: var(--space-md);
+  }
+
+  .lab-illustration {
+    width: 300px;
+    height: 250px;
+  }
+
+  .footer-content {
+    gap: var(--space-2xl);
+  }
+
+  .footer-links {
+    gap: var(--space-xl);
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1rem;
+    --space-4xl: 3rem;
+    --space-3xl: 2.5rem;
+    --space-2xl: 2rem;
+  }
+
+  /* Navigation Mobile */
+  .nav-menu {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--clr-neutral-100);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-elevated);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    border-bottom: 1px solid var(--clr-neutral-200);
+    padding: var(--space-md) 0;
+  }
+
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-link {
+    display: block;
+    padding: var(--space-sm) 0;
+    font-size: 1.125rem;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: var(--clr-neutral-200);
+    margin-top: var(--space-md);
+    border-radius: var(--radius-sm);
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-actions .btn-primary {
+    display: none;
+  }
+
+  /* Hero Mobile */
+  .hero {
+    min-height: 80vh;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .hero-text {
+    order: 1;
+  }
+
+  .hero-visual {
+    order: 2;
+  }
+
+  .hero-description {
+    max-width: none;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    gap: var(--space-md);
+  }
+
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary {
+    flex: 1;
+    min-width: 140px;
+    justify-content: center;
+  }
+
+  .pcb-illustration {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-bg-pattern {
+    display: none;
+  }
+
+  /* Services Mobile */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .service-card {
+    padding: var(--space-xl);
+  }
+
+  /* About Mobile */
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-visual {
+    order: 1;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    max-width: 200px;
+    margin: 0 auto var(--space-2xl);
+  }
+
+  .lab-illustration {
+    width: 250px;
+    height: 200px;
+  }
+
+  /* CTA Mobile */
+  .cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-actions .btn-primary,
+  .cta-actions .btn-outline {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  /* Footer Mobile */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+    text-align: center;
+  }
+
+  .footer-brand {
+    max-width: none;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-lg);
+  }
+
+  .footer-legal {
+    justify-content: center;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 0.75rem;
+    --space-4xl: 2.5rem;
+    --space-3xl: 2rem;
+    --space-2xl: 1.5rem;
+  }
+
+  .section-header {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    font-size: 1.125rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pcb-illustration {
+    width: 200px;
+    height: 200px;
+  }
+
+  .service-card {
+    padding: var(--space-lg);
+  }
+
+  .service-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .service-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .lab-illustration {
+    width: 200px;
+    height: 150px;
+  }
+
+  .equipment.oscilloscope {
+    width: 80px;
+    height: 50px;
+    top: 30px;
+    left: 30px;
+  }
+
+  .equipment.multimeter {
+    width: 40px;
+    height: 60px;
+    top: 40px;
+    right: 40px;
+  }
+
+  .equipment.pcb-holder {
+    width: 120px;
+    height: 25px;
+    bottom: 40px;
+  }
+
+  .cta-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .cta-content p {
+    font-size: 1.125rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .pcb-illustration {
+    width: 180px;
+    height: 180px;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+
+  .stats-grid {
+    gap: var(--space-md);
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+/* Landscape Orientation Fixes */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: var(--space-lg);
+  }
+
+  .hero-content {
+    gap: var(--space-lg);
+  }
+
+  .pcb-illustration {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo,
+  .footer-logo {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .pcb-illustration .component {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-neutral-100: #1A202C;
+    --clr-neutral-200: #2D3748;
+    --clr-neutral-800: #E2E8F0;
+    --clr-neutral-900: #F7FAFC;
+  }
+
+  .navbar {
+    background: rgba(26, 32, 44, 0.95);
+  }
+
+  .navbar.scrolled {
+    background: var(--clr-neutral-100);
+  }
+
+  .service-card,
+  .dropdown-menu,
+  .nav-menu {
+    background: var(--clr-neutral-200);
+  }
+}

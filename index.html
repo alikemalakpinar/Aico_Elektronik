@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICO Elektronik - Akıllı Çözümler. Güvenilir Mühendislik.</title>
+    <meta name="description" content="AICO Elektronik olarak akıllı çip tasarımı, sensör entegrasyonu ve elektronik mühendislik çözümlerinde uzman ekibimizle hizmet veriyoruz.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/home.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="assets/img/logo/logo.svg" alt="AICO Elektronik" class="logo">
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+                <li class="dropdown">
+                    <a href="services/index.html" class="nav-link">Hizmetler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services/smart-chips.html">Akıllı Çip Geliştirme</a></li>
+                        <li><a href="services/sensors.html">Sensör Entegrasyonu</a></li>
+                        <li><a href="services/design-layout.html">Çizim & Dizgi</a></li>
+                        <li><a href="services/consultancy.html">Proje Danışmanlığı</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects/index.html" class="nav-link">Projeler</a></li>
+                <li><a href="about.html" class="nav-link">Hakkımızda</a></li>
+                <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">İletişim</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="contact.html" class="btn-primary">Teklif Al</a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menüyü aç/kapat">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up" data-aos-duration="800">
+                    <h1>Akıllı Çözümler.<br><span class="text-accent">Güvenilir Mühendislik.</span></h1>
+                    <p class="hero-description">
+                        İleri teknoloji elektronik çözümlerimizle projelerinizi hayata geçirin. 
+                        Akıllı çip tasarımından sensör entegrasyonuna kadar kapsamlı mühendislik hizmetleri.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="contact.html" class="btn-primary btn-lg">
+                            Hemen Teklif Al
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </a>
+                        <a href="projects/index.html" class="btn-secondary">
+                            Projelerimizi İncele
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="pcb-illustration">
+                        <div class="circuit-board">
+                            <div class="component chip-1"></div>
+                            <div class="component chip-2"></div>
+                            <div class="component sensor-1"></div>
+                            <div class="trace trace-1"></div>
+                            <div class="trace trace-2"></div>
+                            <div class="trace trace-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-bg-pattern"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-preview" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Hizmetlerimiz</span>
+                <h2>Teknoloji Odaklı Çözümler</h2>
+                <p>Elektronik mühendislik alanında sunduğumuz profesyonel hizmetler</p>
+            </div>
+            
+            <div class="services-grid">
+                <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2"/>
+                            <path d="M22 16c0 1.1-.9 2-2 2h-8c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2v8z"/>
+                        </svg>
+                    </div>
+                    <h3>Akıllı Çip Geliştirme</h3>
+                    <p>Özelleştirilmiş mikrodenetleyici tasarımı ve üretimi ile projelerinize özel çözümler.</p>
+                    <a href="services/smart-chips.html" class="service-link">Detaylar</a>
+                </article>
+                
+                <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2a3 3 0 0 0-3 3c0 1 0 3 1.5 4"/>
+                            <path d="M20 4a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"/>
+                            <path d="M8 21c0-4.5-1-9-3-13"/>
+                            <path d="M16 21c0-4.5 1-9 3-13"/>
+                        </svg>
+                    </div>
+                    <h3>Sensör Entegrasyonu</h3>
+                    <p>IoT ve endüstriyel uygulamalar için gelişmiş sensör teknolojileri ve entegrasyon hizmetleri.</p>
+                    <a href="services/sensors.html" class="service-link">Detaylar</a>
+                </article>
+                
+                <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10,9 9,9 8,9"/>
+                        </svg>
+                    </div>
+                    <h3>Çizim & Dizgi</h3>
+                    <p>Profesyonel PCB tasarımı, şematik çizimi ve layout dizgi hizmetleri.</p>
+                    <a href="services/design-layout.html" class="service-link">Detaylar</a>
+                </article>
+                
+                <article class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/>
+                            <polygon points="18,2 22,6 12,16 8,16 8,12 18,2"/>
+                        </svg>
+                    </div>
+                    <h3>Proje Danışmanlığı</h3>
+                    <p>Elektronik projelerinizde teknik danışmanlık, fizibilite analizi ve çözüm geliştirme.</p>
+                    <a href="services/consultancy.html" class="service-link">Detaylar</a>
+                </article>
+            </div>
+            
+            <div class="section-cta" data-aos="fade-up" data-aos-delay="500">
+                <a href="services/index.html" class="btn-outline">Tüm Hizmetleri Görüntüle</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <span class="section-label">Hakkımızda</span>
+                    <h2>Mühendislik Mükemmelliği</h2>
+                    <p>AICO Elektronik olarak, ileri teknoloji elektronik çözümlerinde deneyimimizle sektörde öncü konumdayız. Uzman mühendis kadromuz ve modern tesislerimizle projelerinizi en yüksek kalite standartlarında hayata geçiriyoruz.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Tamamlanan Proje</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Mutlu Müşteri</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Yıl Deneyim</span>
+                        </div>
+                    </div>
+                    
+                    <a href="about.html" class="btn-secondary">Daha Fazla Bilgi</a>
+                </div>
+                
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="lab-illustration">
+                        <div class="equipment oscilloscope"></div>
+                        <div class="equipment multimeter"></div>
+                        <div class="equipment pcb-holder"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Projenizi Hayata Geçirmeye Hazır mısınız?</h2>
+                <p>Uzman ekibimiz, elektronik mühendislik çözümleriniz için size yardımcı olmaya hazır.</p>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn-primary btn-lg">Ücretsiz Görüşme</a>
+                    <a href="tel:+90555000000" class="btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        Hemen Ara
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cta-bg-pattern"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/img/logo/logo.svg" alt="AICO Elektronik" class="footer-logo">
+                    <p>Akıllı çözümler ve güvenilir mühendislik hizmetleri ile projelerinizi hayata geçiriyoruz.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Hizmetler</h4>
+                        <ul>
+                            <li><a href="services/smart-chips.html">Akıllı Çip Geliştirme</a></li>
+                            <li><a href="services/sensors.html">Sensör Entegrasyonu</a></li>
+                            <li><a href="services/design-layout.html">Çizim & Dizgi</a></li>
+                            <li><a href="services/consultancy.html">Proje Danışmanlığı</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Kurumsal</h4>
+                        <ul>
+                            <li><a href="about.html">Hakkımızda</a></li>
+                            <li><a href="projects/index.html">Projelerimiz</a></li>
+                            <li><a href="careers.html">Kariyer</a></li>
+                            <li><a href="blog/index.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>İletişim</h4>
+                        <ul>
+                            <li><a href="contact.html">İletişim</a></li>
+                            <li><a href="tel:+90555000000">+90 555 000 00 00</a></li>
+                            <li><a href="mailto:info@aicoelektronik.com">info@aicoelektronik.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 AICO Elektronik. Tüm hakları saklıdır.</p>
+                    <div class="footer-legal">
+                        <a href="privacy.html">Gizlilik Politikası</a>
+                        <a href="terms.html">Kullanım Şartları</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

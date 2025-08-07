@@ -1,0 +1,569 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - AICO Elektronik | Elektronik Mühendislik Teklifi</title>
+    <meta name="description" content="Elektronik mühendislik projeleriniz için AICO Elektronik ile iletişime geçin. Ücretsiz teknik danışmanlık ve proje teklifi alın.">
+    <meta name="keywords" content="elektronik mühendislik teklif, AICO iletişim, teknik danışmanlık, proje teklifi">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/contact.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="assets/img/logo/logo.svg" alt="AICO Elektronik" class="logo">
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                <li class="dropdown">
+                    <a href="services/index.html" class="nav-link">Hizmetler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services/smart-chips.html">Akıllı Çip Geliştirme</a></li>
+                        <li><a href="services/sensors.html">Sensör Entegrasyonu</a></li>
+                        <li><a href="services/design-layout.html">Çizim & Dizgi</a></li>
+                        <li><a href="services/consultancy.html">Proje Danışmanlığı</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects/index.html" class="nav-link">Projeler</a></li>
+                <li><a href="about.html" class="nav-link">Hakkımızda</a></li>
+                <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link active">İletişim</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="tel:+90555000000" class="btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    Hemen Ara
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menüyü aç/kapat">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <span class="section-label">İletişim</span>
+                    <h1>Projenizi <span class="text-accent">Hayata Geçirelim</span></h1>
+                    <p class="hero-description">
+                        Elektronik mühendislik projeleriniz için uzman ekibimizden ücretsiz teknik danışmanlık 
+                        ve detaylı proje teklifi alın. 15+ yıllık deneyimimizle size en uygun çözümü sunuyoruz.
+                    </p>
+                    
+                    <div class="quick-contact">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Telefon</span>
+                                <a href="tel:+90555000000" class="contact-value">+90 555 000 00 00<a href="tel:+90555000000" class="contact-value">+90 555 000 00 00</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">E-posta</span>
+                                <a href="mailto:info@aicoelektronik.com" class="contact-value">info@aicoelektronik.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="10" r="3"/>
+                                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Adres</span>
+                                <span class="contact-value">İstanbul, Türkiye</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+                    <div class="contact-illustration">
+                        <div class="contact-cards">
+                            <div class="contact-card email-card">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-card phone-card">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-card meeting-card">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="main-contact">
+        <div class="container">
+            <div class="contact-content">
+                
+                <!-- Contact Form -->
+                <div class="contact-form-section" data-aos="fade-right">
+                    <div class="form-header">
+                        <h2>Proje Teklifi Talep Edin</h2>
+                        <p>Elektronik mühendislik projeleriniz için detaylı bilgi verin, size özel çözüm ve teklif hazırlayalım.</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">Ad *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                <span class="form-error" id="firstName-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Soyad *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                <span class="form-error" id="lastName-error"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">E-posta *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Telefon</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                                <span class="form-error" id="phone-error"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company" class="form-label">Şirket</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serviceType" class="form-label">İlgilendiğiniz Hizmet *</label>
+                            <select id="serviceType" name="serviceType" class="form-select" required>
+                                <option value="">Hizmet seçiniz</option>
+                                <option value="smart-chips">Akıllı Çip Geliştirme</option>
+                                <option value="sensors">Sensör Entegrasyonu</option>
+                                <option value="design-layout">Çizim & Dizgi</option>
+                                <option value="consultancy">Proje Danışmanlığı</option>
+                                <option value="multiple">Birden Fazla Hizmet</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                            <span class="form-error" id="serviceType-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Proje Bütçesi</label>
+                            <select id="budget" name="budget" class="form-select">
+                                <option value="">Bütçe aralığı seçiniz</option>
+                                <option value="under-10k">10.000 TL altı</option>
+                                <option value="10k-25k">10.000 - 25.000 TL</option>
+                                <option value="25k-50k">25.000 - 50.000 TL</option>
+                                <option value="50k-100k">50.000 - 100.000 TL</option>
+                                <option value="over-100k">100.000 TL üzeri</option>
+                                <option value="flexible">Esnek</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline" class="form-label">Proje Zaman Çizelgesi</label>
+                            <select id="timeline" name="timeline" class="form-select">
+                                <option value="">Zaman çizelgesi seçiniz</option>
+                                <option value="asap">Acil (1-2 hafta)</option>
+                                <option value="1-month">1 ay içinde</option>
+                                <option value="2-3-months">2-3 ay içinde</option>
+                                <option value="6-months">6 ay içinde</option>
+                                <option value="flexible">Esnek</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Proje Detayları *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Projenizin detaylarını, gereksinimlerinizi ve beklentilerinizi açıklayın..." required></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">
+                                    <a href="privacy.html" target="_blank">Gizlilik Politikası</a>'nı okudum ve kabul ediyorum. *
+                                </span>
+                            </label>
+                            <span class="form-error" id="privacy-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Elektronik mühendislik ile ilgili güncellemeler almak istiyorum.</span>
+                            </label>
+                        </div>
+                        
+                        <!-- reCAPTCHA -->
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                            <span class="form-error" id="recaptcha-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-lg btn-submit" id="submit-btn">
+                            <span class="btn-text">Teklif Talep Et</span>
+                            <div class="btn-loader" style="display: none;">
+                                <div class="spinner"></div>
+                            </div>
+                        </button>
+                        
+                        <div class="form-success" id="form-success" style="display: none;">
+                            <div class="success-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                            </div>
+                            <div class="success-content">
+                                <h4>Mesajınız Başarıyla Gönderildi!</h4>
+                                <p>Uzman ekibimiz en kısa sürede sizinle iletişime geçecektir. Teşekkür ederiz.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info-section" data-aos="fade-left">
+                    <div class="contact-card-info">
+                        <h3>Neden AICO Elektronik?</h3>
+                        <ul class="benefits-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                15+ yıl sektör deneyimi
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                500+ başarılı proje
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                Ücretsiz teknik danışmanlık
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                Hızlı prototip geliştirme
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                7/24 teknik destek
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="contact-card-info">
+                        <h3>İletişim Bilgileri</h3>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <div class="detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="detail-content">
+                                    <strong>Adres</strong>
+                                    <p>Teknoloji Geliştirme Bölgesi<br>34770 Ümraniye, İstanbul</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="detail-content">
+                                    <strong>Telefon</strong>
+                                    <p><a href="tel:+90555000000">+90 555 000 00 00</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="detail-content">
+                                    <strong>E-posta</strong>
+                                    <p><a href="mailto:info@aicoelektronik.com">info@aicoelektronik.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                </div>
+                                <div class="detail-content">
+                                    <strong>Çalışma Saatleri</strong>
+                                    <p>Pazartesi - Cuma: 09:00 - 18:00<br>Cumartesi: 09:00 - 14:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card-info">
+                        <h3>Hızlı İletişim</h3>
+                        <div class="quick-actions">
+                            <a href="tel:+90555000000" class="quick-action-btn phone-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                Hemen Ara
+                            </a>
+                            
+                            <a href="mailto:info@aicoelektronik.com" class="quick-action-btn email-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                E-posta Gönder
+                            </a>
+                            
+                            <a href="https://wa.me/905550000000" class="quick-action-btn whatsapp-btn" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Sık Sorulan Sorular</span>
+                <h2>Merak Ettikleriniz</h2>
+                <p>Elektronik mühendislik hizmetlerimiz hakkında sık sorulan sorular</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Proje süreniz ne kadar?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Proje süresi, karmaşıklığına göre 2-12 hafta arasında değişir. Basit PCB tasarımları 1-2 hafta, karmaşık sistem entegrasyonları 8-12 hafta sürebilir. Size özel timeline analizi yapıyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Prototip üretimi de yapıyor musunuz?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Evet, tasarım sürecinin tamamlanmasının ardından prototip üretimi de gerçekleştiriyoruz. Test ve doğrulama süreçlerini de dahil ederek size tam çalışır prototip teslim ediyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Hangi sektörlere hizmet veriyorsunuz?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Endüstriyel otomasyon, IoT, tıbbi cihazlar, otomotiv, telekomünikasyon ve savunma sanayi gibi geniş bir yelpazede elektronik mühendislik hizmetleri sunuyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Sertifikasyon süreçlerinde yardım ediyor musunuz?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Evet, CE, FCC, UL gibi uluslararası sertifikasyon süreçlerinde tam destek sağlıyoruz. EMC/EMI testleri ve dokümantasyon hazırlığı dahil olmak üzere tüm süreçleri yönetiyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/img/logo/logo.svg" alt="AICO Elektronik" class="footer-logo">
+                    <p>Akıllı çözümler ve güvenilir mühendislik hizmetleri ile projelerinizi hayata geçiriyoruz.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Hizmetler</h4>
+                        <ul>
+                            <li><a href="services/smart-chips.html">Akıllı Çip Geliştirme</a></li>
+                            <li><a href="services/sensors.html">Sensör Entegrasyonu</a></li>
+                            <li><a href="services/design-layout.html">Çizim & Dizgi</a></li>
+                            <li><a href="services/consultancy.html">Proje Danışmanlığı</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Kurumsal</h4>
+                        <ul>
+                            <li><a href="about.html">Hakkımızda</a></li>
+                            <li><a href="projects/index.html">Projelerimiz</a></li>
+                            <li><a href="careers.html">Kariyer</a></li>
+                            <li><a href="blog/index.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>İletişim</h4>
+                        <ul>
+                            <li><a href="contact.html">İletişim</a></li>
+                            <li><a href="tel:+90555000000">+90 555 000 00 00</a></li>
+                            <li><a href="mailto:info@aicoelektronik.com">info@aicoelektronik.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 AICO Elektronik. Tüm hakları saklıdır.</p>
+                    <div class="footer-legal">
+                        <a href="privacy.html">Gizlilik Politikası</a>
+                        <a href="terms.html">Kullanım Şartları</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validate.js"></script>
+    
+    <script>
+        // FAQ Toggle Function
+        function toggleFAQ(button) {
+            const faqItem = button.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = button.querySelector('svg');
+            
+            // Close other open FAQs
+            document.querySelectorAll('.faq-item.active').forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            faqItem.classList.toggle('active');
+        }
+    </script>
+</body>
+</html><!DOCTYPE html>

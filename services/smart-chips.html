@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akıllı Çip Geliştirme - AICO Elektronik | Özelleştirilmiş Mikrodenetleyici Tasarımı</title>
+    <meta name="description" content="ARM Cortex-M, FPGA ve IoT çip tasarımı ile projelerinize özel akıllı çip çözümleri geliştiriyoruz. 15+ yıl deneyim, 500+ proje.">
+    <meta name="keywords" content="akıllı çip geliştirme, mikrodenetleyici, ARM Cortex-M, FPGA, IoT çip, elektronik tasarım">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/logo/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/pages/service-detail.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Akıllı Çip Geliştirme",
+        "description": "ARM Cortex-M, FPGA ve IoT çip tasarımı ile projelerinize özel akıllı çip çözümleri",
+        "provider": {
+            "@type": "Organization",
+            "name": "AICO Elektronik",
+            "url": "https://aicoelektronik.com"
+        },
+        "serviceType": "Elektronik Mühendislik",
+        "areaServed": "Türkiye"
+    }
+    </script>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../assets/img/logo/logo.svg" alt="AICO Elektronik" class="logo">
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link active">Hizmetler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="smart-chips.html">Akıllı Çip Geliştirme</a></li>
+                        <li><a href="sensors.html">Sensör Entegrasyonu</a></li>
+                        <li><a href="design-layout.html">Çizim & Dizgi</a></li>
+                        <li><a href="consultancy.html">Proje Danışmanlığı</a></li>
+                    </ul>
+                </li>
+                <li><a href="../projects/index.html" class="nav-link">Projeler</a></li>
+                <li><a href="../about.html" class="nav-link">Hakkımızda</a></li>
+                <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
+                <li><a href="../contact.html" class="nav-link">İletişim</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="../contact.html" class="btn-primary">Teklif Al</a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menüyü aç/kapat">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb-list">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="index.html">Hizmetler</a></li>
+                    <li aria-current="page">Akıllı Çip Geliştirme</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Service Hero -->
+    <section class="service-detail-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <div class="service-icon-hero">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2"/>
+                            <path d="M22 16c0 1.1-.9 2-2 2h-8c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2v8z"/>
+                        </svg>
+                    </div>
+                    <h1>Akıllı Çip <span class="text-accent">Geliştirme</span></h1>
+                    <p class="hero-subtitle">Özelleştirilmiş Mikrodenetleyici Tasarımı ve Üretimi</p>
+                    <p class="hero-description">
+                        IoT cihazlarından endüstriyel otomasyon sistemlerine kadar geniş spektrumda 
+                        özelleştirilmiş akıllı çip çözümleri geliştiriyoruz. ARM Cortex-M tabanlı 
+                        mikroişlemcilerden FPGA tasarımlarına kadar projelerinize özel çözümler sunuyoruz.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>ARM Cortex-M Serisi</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>FPGA Tasarımı</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>IoT Optimizasyonu</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>Real-time İşletim Sistemi</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="../contact.html?service=smart-chips" class="btn-primary btn-lg">Proje Başlat</a>
+                        <a href="#service-details" class="btn-secondary">Detayları İncele</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+                    <div class="chip-3d-model">
+                        <div class="chip-container">
+                            <div class="chip-main">
+                                <div class="chip-core"></div>
+                                <div class="chip-pins">
+                                    <div class="pin-row top"></div>
+                                    <div class="pin-row bottom"></div>
+                                    <div class="pin-row left"></div>
+                                    <div class="pin-row right"></div>
+                                </div>
+                            </div>
+                            <div class="chip-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="service-overview" id="service-details">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text" data-aos="fade-right">
+                    <span class="section-label">Hizmet Detayları</span>
+                    <h2>Neden Akıllı Çip Geliştirme?</h2>
+                    <p>
+                        Modern teknoloji dünyasında standart çözümler her zaman yeterli olmaz. 
+                        Projelerinizin özel gereksinimlerine uygun, optimize edilmiş akıllı çip 
+                        çözümleri ile rekabet avantajı sağlayın.
+                    </p>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Yüksek Performans</h4>
+                                <p>Projenize özel optimize edilmiş performans</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 1v6"/>
+                                    <path d="M12 17v6"/>
+                                    <path d="m3 12 1.5-1.5"/>
+                                    <path d="m19.5 10.5 1.5-1.5"/>
+                                    <path d="m3 12 1.5 1.5"/>
+                                    <path d="m19.5 13.5 1.5 1.5"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Düşük Güç Tüketimi</h4>
+                                <p>IoT ve mobil uygulamalar için optimize</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4"/>
+                                    <path d="M21 12c.552 0 1-.448 1-1V5c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1"/>
+                                    <path d="M3 12v6c0 .552.448 1 1 1h16c.552 0 1-.448 1-1v-6"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Maliyet Etkinliği</h4>
+                                <p>Toplu üretimde düşük birim maliyetler</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                                    <circle cx="12" cy="13" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>IP Koruması</h4>
+                                <p>Fikri mülkiyet haklarınızı koruyun</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-stats" data-aos="fade-left">
+                    <div class="stats-card">
+                        <h3>Teknik Özellikler</h3>
+                        <div class="stat-item">
+                            <span class="stat-label">İşlemci Hızı</span>
+                            <span class="stat-value">Up to 400MHz</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Bellek</span>
+                            <span class="stat-value">2MB Flash + 512KB RAM</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">GPIO Pinleri</span>
+                            <span class="stat-value">100+ Konfigüre Edilebilir</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">İletişim</span>
+                            <span class="stat-value">UART, SPI, I2C, CAN</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Güç Tüketimi</span>
+                            <span class="stat-value">< 50µA Standby</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Çalışma Sıcaklığı</span>
+                            <span class="stat-value">-40°C to +85°C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Capabilities -->
+    <section class="technical-capabilities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Teknik Yeteneklerimiz</span>
+                <h2>Akıllı Çip Geliştirme Sürecimiz</h2>
+                <p>Konseptten üretime kadar tüm aşamalarda profesyonel hizmet</p>
+            </div>
+            
+            <div class="capabilities-grid">
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="capability-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M12 2a10 10 0 1 0 10 10"/>
+                        </svg>
+                    </div>
+                    <h3>Sistem Mimarisi</h3>
+                    <p>Projenizin gereksinimlerine göre optimal sistem mimarisi tasarımı ve performans analizi.</p>
+                    <ul class="capability-features">
+                        <li>Performans gereksinimleri analizi</li>
+                        <li>Güç tüketimi optimizasyonu</li>
+                        <li>Real-time sistem tasarımı</li>
+                        <li>Memory management stratejisi</li>
+                    </ul>
+                </div>
+                
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="capability-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2"/>
+                        </svg>
+                    </div>
+                    <h3>Hardware Tasarımı</h3>
+                    <p>ARM Cortex-M ve FPGA tabanlı özelleştirilmiş hardware çözümleri geliştiriyoruz.</p>
+                    <ul class="capability-features">
+                        <li>ARM Cortex-M0/M3/M4/M7</li>
+                        <li>FPGA (Xilinx, Intel/Altera)</li>
+                        <li>Analog front-end tasarımı</li>
+                        <li>Power management unit</li>
+                    </ul>
+                </div>
+                
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="capability-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3>Firmware Geliştirme</h3>
+                    <p>C/C++ ve Assembly ile optimize edilmiş, güvenilir firmware çözümleri.</p>
+                    <ul class="capability-features">
+                        <li>Bare-metal programming</li>
+                        <li>RTOS entegrasyonu</li>
+                        <li>HAL katman geliştirme</li>
+                        <li>Boot loader tasarımı</li>
+                    </ul>
+                </div>
+                
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="capability-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Test & Doğrulama</h3>
+                    <p>Kapsamlı test süreçleri ile güvenilir ve kararlı çip çözümleri garanti ediyoruz.</p>
+                    <ul class="capability-features">
+                        <li>Unit testing & integration</li>
+                        <li>Functional verification</li>
+                        <li>Performance benchmarking</li>
+                        <li>Environmental testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Uygulama Alanları</span>
+                <h2>Akıllı Çip Çözümlerimizin Kullanım Alanları</h2>
+                <p>Farklı sektörlerde başarıyla uyguladığımız projeler</p>
+            </div>
+            
+            <div class="use-cases-grid">
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="use-case-image">
+                        <div class="use-case-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                                <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                                <line x1="12" y1="20" x2="12.01" y2="20"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="use-case-content">
+                        <h3>IoT Cihazları</h3>
+                        <p>Akıllı ev sistemleri, endüstriyel IoT sensörleri ve wearable teknolojiler için düşük güç tüketimli çip çözümleri.</p>
+                        <ul class="use-case-features">
+                            <li>WiFi/Bluetooth entegrasyonu</li>
+                            <li>Long-range iletişim (LoRa)</li>
+                            <li>Edge computing capability</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="use-case-image">
+                        <div class="use-case-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                                <circle cx="12" cy="13" r="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Endüstriyel Otomasyon</h3>
+                        <p>Fabrika otomasyonu, robotik sistemler ve endüstriyel kontrol üniteleri için yüksek performanslı çözümler.</p>
+                        <ul class="use-case-features">
+                            <li>Real-time control systems</li>
+                            <li>Motor control algorithms</li>
+                            <li>Safety-critical applications</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="use-case-image">
+                        <div class="use-case-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5Z"/>
+                                <path d="M12 5L8 21l4-7 4 7-4-16"/>
+                                <path d="M2 21c20 0 20-8 20-8"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Medikal Cihazlar</h3>
+                        <p>Hasta izleme sistemleri, medikal sensörler ve taşınabilir sağlık cihazları için FDA/CE uyumlu çözümler.</p>
+                        <ul class="use-case-features">
+                            <li>Bio-signal processing</li>
+                            <li>Low-power wireless comm</li>
+                            <li>Medical-grade certification</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="use-case-image">
+                        <div class="use-case-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 6 6 18"/>
+                                <path d="M6 6l12 12"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Otomotiv Sistemleri</h3>
+                        <p>Araç içi elektronik sistemler, ADAS çözümleri ve elektrikli araç kontrol üniteleri için otomotiv standartlarında çipler.</p>
+                        <ul class="use-case-features">
+                            <li>Automotive-grade (AEC-Q100)</li>
+                            <li>CAN-FD communication</li>
+                            <li>Functional safety (ISO 26262)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="development-process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Geliştirme Süreci</span>
+                <h2>Akıllı Çip Projesi Nasıl Gelişir?</h2>
+                <p>Konseptten üretime kadar sistematik yaklaşımımız</p>
+            </div>
+            
+            <div class="process-timeline-horizontal">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Prototip & Test</h3>
+                        <p>Prototip üretimi yaparak kapsamlı fonksiyonel ve performans testlerini gerçekleştiriyoruz.</p>
+                        <div class="step-details">
+                            <span>Süre: 2-3 hafta</span>
+                            <span>Çıktı: Test edilmiş prototip</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Optimizasyon</h3>
+                        <p>Test sonuçlarına göre performans optimizasyonu ve son iyileştirmeleri yapıyoruz.</p>
+                        <div class="step-details">
+                            <span>Süre: 1-2 hafta</span>
+                            <span>Çıktı: Final tasarım</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="600">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>Üretim Desteği</h3>
+                        <p>Seri üretim için gerekli dokümantasyon ve üretim desteği sağlıyoruz.</p>
+                        <div class="step-details">
+                            <span>Süre: Devam eden</span>
+                            <span>Çıktı: Üretim dosyaları</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="technology-stack">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Teknoloji Yığını</span>
+                <h2>Kullandığımız Araç ve Teknolojiler</h2>
+                <p>En güncel teknolojiler ile projelerinizi geliştiriyoruz</p>
+            </div>
+            
+            <div class="tech-stack-grid">
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Mikroişlemciler</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">STM32 (ARM Cortex-M)</div>
+                        <div class="tech-item">ESP32/ESP8266</div>
+                        <div class="tech-item">Nordic nRF</div>
+                        <div class="tech-item">TI MSP430</div>
+                        <div class="tech-item">Atmel/Microchip</div>
+                        <div class="tech-item">RISC-V</div>
+                    </div>
+                </div>
+                
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>FPGA Platformları</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">Xilinx Zynq</div>
+                        <div class="tech-item">Intel Cyclone</div>
+                        <div class="tech-item">Lattice iCE40</div>
+                        <div class="tech-item">Microsemi PolarFire</div>
+                    </div>
+                </div>
+                
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Geliştirme Araçları</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">Keil MDK-ARM</div>
+                        <div class="tech-item">IAR Embedded Workbench</div>
+                        <div class="tech-item">STM32CubeIDE</div>
+                        <div class="tech-item">Vivado Design Suite</div>
+                        <div class="tech-item">ModelSim</div>
+                        <div class="tech-item">MATLAB/Simulink</div>
+                    </div>
+                </div>
+                
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3>İşletim Sistemleri</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">FreeRTOS</div>
+                        <div class="tech-item">Azure RTOS</div>
+                        <div class="tech-item">Zephyr OS</div>
+                        <div class="tech-item">Mbed OS</div>
+                        <div class="tech-item">Bare Metal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Packages -->
+    <section class="pricing-packages">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Hizmet Paketleri</span>
+                <h2>Size Uygun Paketi Seçin</h2>
+                <p>Farklı bütçe ve ihtiyaçlara uygun esnek çözümler</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3>Konsept Geliştirme</h3>
+                        <p class="pricing-subtitle">Fikir değerlendirme ve fizibilite</p>
+                        <div class="pricing-price">
+                            <span class="price-amount">₺15.000</span>
+                            <span class="price-period">başlangıç</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Gereksinim analizi</li>
+                        <li>Fizibilite etüdü</li>
+                        <li>Teknik spesifikasyon</li>
+                        <li>Maliyet tahmini</li>
+                        <li>Proje rooad map</li>
+                    </ul>
+                    <a href="../contact.html?service=smart-chips&package=concept" class="btn-outline">Başla</a>
+                </div>
+                
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-badge">Popüler</div>
+                    <div class="pricing-header">
+                        <h3>Tam Geliştirme</h3>
+                        <p class="pricing-subtitle">Hardware + Firmware + Test</p>
+                        <div class="pricing-price">
+                            <span class="price-amount">₺75.000</span>
+                            <span class="price-period">başlangıç</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Konsept geliştirme dahil</li>
+                        <li>Hardware tasarımı</li>
+                        <li>Firmware geliştirme</li>
+                        <li>Prototip üretimi</li>
+                        <li>Kapsamlı testler</li>
+                        <li>3 ay teknik destek</li>
+                    </ul>
+                    <a href="../contact.html?service=smart-chips&package=full" class="btn-primary">Başla</a>
+                </div>
+                
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3>Üretim Desteği</h3>
+                        <p class="pricing-subtitle">Seri üretim optimizasyonu</p>
+                        <div class="pricing-price">
+                            <span class="price-amount">₺25.000</span>
+                            <span class="price-period">başlangıç</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>DFM optimizasyonu</li>
+                        <li>Üretim dosyaları</li>
+                        <li>Kalite kontrol planı</li>
+                        <li>Tedarikçi değerlendirme</li>
+                        <li>Üretim desteği</li>
+                    </ul>
+                    <a href="../contact.html?service=smart-chips&package=production" class="btn-outline">Başla</a>
+                </div>
+            </div>
+            
+            <div class="pricing-note" data-aos="fade-up" data-aos-delay="400">
+                <p><strong>Not:</strong> Fiyatlar proje karmaşıklığına göre değişebilir. Detaylı teklif için bizimle iletişime geçin.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="related-services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">İlgili Hizmetler</span>
+                <h2>Diğer Hizmetlerimiz</h2>
+                <p>Akıllı çip projelerinizi tamamlayacak ek hizmetler</p>
+            </div>
+            
+            <div class="related-services-grid">
+                <div class="related-service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2a3 3 0 0 0-3 3c0 1 0 3 1.5 4"/>
+                            <path d="M20 4a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"/>
+                            <path d="M8 21c0-4.5-1-9-3-13"/>
+                            <path d="M16 21c0-4.5 1-9 3-13"/>
+                        </svg>
+                    </div>
+                    <h3>Sensör Entegrasyonu</h3>
+                    <p>Akıllı çipleriniz için uyumlu sensör çözümleri ve entegrasyon hizmetleri.</p>
+                    <a href="sensors.html" class="service-link">Detaylar →</a>
+                </div>
+                
+                <div class="related-service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>PCB Tasarımı</h3>
+                    <p>Akıllı çipleriniz için profesyonel PCB tasarımı ve layout hizmetleri.</p>
+                    <a href="design-layout.html" class="service-link">Detaylar →</a>
+                </div>
+                
+                <div class="related-service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/>
+                            <polygon points="18,2 22,6 12,16 8,16 8,12 18,2"/>
+                        </svg>
+                    </div>
+                    <h3>Teknik Danışmanlık</h3>
+                    <p>Proje planlama, teknoloji seçimi ve sistem mimarisi konularında uzman danışmanlık.</p>
+                    <a href="consultancy.html" class="service-link">Detaylar →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Akıllı Çip Projenizi Başlatmaya Hazır mısınız?</h2>
+                <p>15+ yıllık deneyimimiz ve 500+ başarılı projemizle size en uygun akıllı çip çözümünü geliştiriyoruz.</p>
+                
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20,6 9,17 4,12"/>
+                        </svg>
+                        <span>Ücretsiz Konsültasyon</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20,6 9,17 4,12"/>
+                        </svg>
+                        <span>48 Saat İçinde Geri Dönüş</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20,6 9,17 4,12"/>
+                        </svg>
+                        <span>NDA Güvencesi</span>
+                    </div>
+                </div>
+                
+                <div class="cta-actions">
+                    <a href="../contact.html?service=smart-chips" class="btn-primary btn-lg">Proje Başlat</a>
+                    <a href="tel:+90555000000" class="btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        Hemen Ara
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cta-bg-pattern"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/img/logo/logo.svg" alt="AICO Elektronik" class="footer-logo">
+                    <p>Akıllı çözümler ve güvenilir mühendislik hizmetleri ile projelerinizi hayata geçiriyoruz.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Hizmetler</h4>
+                        <ul>
+                            <li><a href="smart-chips.html">Akıllı Çip Geliştirme</a></li>
+                            <li><a href="sensors.html">Sensör Entegrasyonu</a></li>
+                            <li><a href="design-layout.html">Çizim & Dizgi</a></li>
+                            <li><a href="consultancy.html">Proje Danışmanlığı</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Kurumsal</h4>
+                        <ul>
+                            <li><a href="../about.html">Hakkımızda</a></li>
+                            <li><a href="../projects/index.html">Projelerimiz</a></li>
+                            <li><a href="../careers.html">Kariyer</a></li>
+                            <li><a href="../blog/index.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>İletişim</h4>
+                        <ul>
+                            <li><a href="../contact.html">İletişim</a></li>
+                            <li><a href="tel:+90555000000">+90 555 000 00 00</a></li>
+                            <li><a href="mailto:info@aicoelektronik.com">info@aicoelektronik.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 AICO Elektronik. Tüm hakları saklıdır.</p>
+                    <div class="footer-legal">
+                        <a href="../privacy.html">Gizlilik Politikası</a>
+                        <a href="../terms.html">Kullanım Şartları</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>-aos="fade-up" data-aos-delay="100">
+                    

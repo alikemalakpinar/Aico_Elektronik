@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerimiz - AICO Elektronik | Başarılı Elektronik Mühendislik Projeleri</title>
+    <meta name="description" content="AICO Elektronik tarafından başarıyla tamamlanan 500+ elektronik mühendislik projesi. IoT, endüstriyel otomasyon ve akıllı çip çözümleri.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/logo/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/projects.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../assets/img/logo/logo.svg" alt="AICO Elektronik" class="logo">
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                <li class="dropdown">
+                    <a href="../services/index.html" class="nav-link">Hizmetler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../services/smart-chips.html">Akıllı Çip Geliştirme</a></li>
+                        <li><a href="../services/sensors.html">Sensör Entegrasyonu</a></li>
+                        <li><a href="../services/design-layout.html">Çizim & Dizgi</a></li>
+                        <li><a href="../services/consultancy.html">Proje Danışmanlığı</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html" class="nav-link active">Projeler</a></li>
+                <li><a href="../about.html" class="nav-link">Hakkımızda</a></li>
+                <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
+                <li><a href="../contact.html" class="nav-link">İletişim</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="../contact.html" class="btn-primary">Teklif Al</a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menüyü aç/kapat">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <span class="section-label">Projelerimiz</span>
+                    <h1>Başarılı <span class="text-accent">Elektronik Projeleri</span></h1>
+                    <p class="hero-description">
+                        15+ yılda 500'ün üzerinde başarıyla tamamladığımız projelerle elektronik mühendislik 
+                        alanındaki deneyimimizi ve uzmanlığımızı keşfedin.
+                    </p>
+                    
+                    <div class="project-filters" id="project-filters">
+                        <button class="filter-btn active" data-filter="all">Tümü</button>
+                        <button class="filter-btn" data-filter="iot">IoT Sistemler</button>
+                        <button class="filter-btn" data-filter="industrial">Endüstriyel</button>
+                        <button class="filter-btn" data-filter="medical">Medikal</button>
+                        <button class="filter-btn" data-filter="automotive">Otomotiv</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Öne Çıkan Projeler</span>
+                <h2>En Büyük Başarılarımız</h2>
+                <p>Sektörde fark yaratan, yenilikçi çözümlerimizle gerçekleştirdiğimiz projeler</p>
+            </div>
+            
+            <div class="featured-project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <rect width="20" height="14" x="2" y="3" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-category">Endüstriyel IoT</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Akıllı Fabrika Otomasyon Sistemi</h3>
+                    <p class="project-description">
+                        Büyük ölçekli tekstil fabrikası için geliştirilen kapsamlı IoT tabanlı otomasyon sistemi. 
+                        500+ sensör, real-time veri analizi ve predictive maintenance özellikleri içeren çözüm.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ARM Cortex-M7</span>
+                        <span class="tech-tag">LoRaWAN</span>
+                        <span class="tech-tag">Edge Computing</span>
+                        <span class="tech-tag">Machine Learning</span>
+                    </div>
+                    <div class="project-results">
+                        <div class="result-item">
+                            <span class="result-value">%40</span>
+                            <span class="result-label">Enerji Tasarrufu</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">%65</span>
+                            <span class="result-label">Verimlilik Artışı</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">%90</span>
+                            <span class="result-label">Hata Azalması</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid-section">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
+                
+                <!-- IoT Project -->
+                <div class="project-card" data-category="iot" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                                <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                                <line x1="12" y1="20" x2="12.01" y2="20"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-meta">
+                            <span class="category-badge iot">IoT Sistemler</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3>Akıllı Ev Otomasyon Sistemi</h3>
+                        <p>WiFi ve Zigbee protokolleri ile çalışan kapsamlı ev otomasyon çözümü. 50+ cihaz kontrolü ve AI destekli enerji optimizasyonu.</p>
+                        <div class="project-tech-mini">
+                            <span>ESP32</span>
+                            <span>Zigbee</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industrial Project -->
+                <div class="project-card" data-category="industrial" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M2 20h20"/>
+                                <path d="M4 20V10"/>
+                                <path d="M8 20V14"/>
+                                <path d="M12 20V6"/>
+                                <path d="M16 20V10"/>
+                                <path d="M20 20V14"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-meta">
+                            <span class="category-badge industrial">Endüstriyel</span>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <h3>CNC Makine Kontrol Sistemi</h3>
+                        <p>Yüksek hassasiyetli CNC torna tezgahı için real-time kontrol sistemi. Sub-mikron hassasiyet ve predictive maintenance.</p>
+                        <div class="project-tech-mini">
+                            <span>FPGA</span>
+                            <span>Real-time OS</span>
+                            <span>EtherCAT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical Project -->
+                <div class="project-card" data-category="medical" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card-image">
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5Z"/>
+                                <path d="M12 5L8 21l4-7 4 7-4-16"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-meta">
+                            <span class="category-badge medical">Medikal</span>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <h3>Taşınabilir EKG Monitörü</h3>
+                        <p>CE sertifikalı taşınabilir EKG cihazı. 24 saat sürekli monitörleme, Bluetooth bağlantısı ve cloud entegrasyonu.</p>
+                        <div class="project-tech-mini">
+                            <span>STM32L4</span>
+                            <span>Bluetooth LE</span>
+                            <span>Medical Grade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automotive Project -->
+                <div class="project-card" data-category="automotive" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card-image">
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18.4 10c-.4-.6-1-1-1.6-1H7.2c-.6 0-1.2.4-1.6 1L3.5 11.1c-.8.2-1.5 1-1.5 1.9v3c0 .6.4 1 1 1h2"/>
+                                <circle cx="7" cy="17" r="2"/>
+                                <circle cx="17" cy="17" r="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-meta">
+                            <span class="category-badge automotive">Otomotiv</span>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <h3>Elektrikli Araç Şarj İstasyonu</h3>
+                        <p>AEC-Q100 standartlarında elektrikli araç şarj kontrol ünitesi. 22kW güç kapasitesi ve akıllı load balancing.</p>
+                        <div class="project-tech-mini">
+                            <span>Automotive MCU</span>
+                            <span>CAN-FD</span>
+                            <span>ISO 26262</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IoT Sensors Project -->
+                <div class="project-card" data-category="iot" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card-image">
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2a3 3 0 0 0-3 3c0 1 0 3 1.5 4"/>
+                                <path d="M20 4a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"/>
+                                <path d="M8 21c0-4.5-1-9-3-13"/>
+                                <path d="M16 21c0-4.5 1-9 3-13"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-meta">
+                            <span class="category-badge iot">IoT Sistemler</span>
+                            <span class="project-date">2022</span>
+                        </div>
+                        <h3>Tarım IoT Sensör Ağı</h3>
+                        <p>1000+ dönüm alan kapsayan akıllı tarım sensör ağı. Toprak nemi, hava durumu ve bitki sağlığı monitörleme.</p>
+                        <div class="project-tech-mini">
+                            <span>LoRaWAN</span>
+                            <span>Solar Power</span>
+                            <span>Cloud Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industrial Automation -->
+                <div class="project-card" data-category="industrial" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-card-image">
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+                                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2"/>
+                                <path d="M22 16c0 1.1-.9 2-2 2h-8c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2v8z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-meta">
+                            <span class="category-badge industrial">Endüstriyel</span>
+                            <span class="project-date">2022</span>
+                        </div>
+                        <h3>Robotik Kol Kontrol Sistemi</h3>
+                        <p>6-DOF endüstriyel robotik kol için geliştirilmiş hassas kontrol sistemi. Sub-milimetre hassasiyet ve güvenlik sertifikası.</p>
+                        <div class="project-tech-mini">
+                            <span>ARM Cortex-R</span>
+                            <span>Safety Critical</span>
+                            <span>EtherCAT</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="load-more-section" data-aos="fade-up">
+                <button class="btn-outline load-more-btn" id="load-more-btn">Daha Fazla Proje Yükle</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Success Metrics -->
+    <section class="project-metrics">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Başarı Metrikleri</span>
+                <h2>Projelerimizin Rakamlarla Başarısı</h2>
+                <p>15+ yıllık deneyimimizin somut sonuçları</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="metric-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <div class="metric-number">₺250M+</div>
+                    <div class="metric-label">Toplam Proje Değeri</div>
+                    <div class="metric-description">Tamamlanan tüm projelerimizin toplam değeri</div>
+                </div>
+                
+                <div class="metric-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="metric-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <div class="metric-number">98%</div>
+                    <div class="metric-label">Zamanında Teslimat</div>
+                    <div class="metric-description">Projelerimizin zamanında teslim edilme oranı</div>
+                </div>
+                
+                <div class="metric-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="metric-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                        </svg>
+                    </div>
+                    <div class="metric-number">%95</div>
+                    <div class="metric-label">Müşteri Memnuniyeti</div>
+                    <div class="metric-description">Proje sonrası müşteri memnuniyet oranımız</div>
+                </div>
+                
+                <div class="metric-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="metric-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <div class="metric-number">15+</div>
+                    <div class="metric-label">Sektör Ödülü</div>
+                    <div class="metric-description">Projelerimizle aldığımız sektörel ödüller</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study CTA -->
+    <section class="case-study-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Detaylı Vaka Çalışmalarını İncelemek İster misiniz?</h2>
+                <p>Projelerimizin teknik detayları, karşılaştığımız zorluklar ve çözüm süreçleri hakkında derinlemesine bilgi alın.</p>
+                <div class="cta-actions">
+                    <a href="../contact.html?request=case-study" class="btn-primary">Vaka Çalışması Talep Et</a>
+                    <a href="../contact.html" class="btn-outline">Benzer Proje İçin Teklif Al</a>
+                </div>
+            </div>
+        </div>
+        <div class="cta-bg-pattern"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/img/logo/logo.svg" alt="AICO Elektronik" class="footer-logo">
+                    <p>Akıllı çözümler ve güvenilir mühendislik hizmetleri ile projelerinizi hayata geçiriyoruz.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Hizmetler</h4>
+                        <ul>
+                            <li><a href="../services/smart-chips.html">Akıllı Çip Geliştirme</a></li>
+                            <li><a href="../services/sensors.html">Sensör Entegrasyonu</a></li>
+                            <li><a href="../services/design-layout.html">Çizim & Dizgi</a></li>
+                            <li><a href="../services/consultancy.html">Proje Danışmanlığı</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Kurumsal</h4>
+                        <ul>
+                            <li><a href="../about.html">Hakkımızda</a></li>
+                            <li><a href="index.html">Projelerimiz</a></li>
+                            <li><a href="../careers.html">Kariyer</a></li>
+                            <li><a href="../blog/index.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>İletişim</h4>
+                        <ul>
+                            <li><a href="../contact.html">İletişim</a></li>
+                            <li><a href="tel:+90555000000">+90 555 000 00 00</a></li>
+                            <li><a href="mailto:info@aicoelektronik.com">info@aicoelektronik.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 AICO Elektronik. Tüm hakları saklıdır.</p>
+                    <div class="footer-legal">
+                        <a href="../privacy.html">Gizlilik Politikası</a>
+                        <a href="../terms.html">Kullanım Şartları</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/projects.js"></script>
+</body>
+</html>
